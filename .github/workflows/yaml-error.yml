@@ -1,0 +1,9 @@
+name: YAML Error #ワークフロー名
+on: push #イベント(プッシュ時に起動) ※複数指定可能
+jobs: #ジョブの定義
+
+    yanlerror: #ジョブID
+        runs-on: ubuntu-latest #ランナー(Ubuntuで実行)
+        steps: #step定義
+        - run: echo "YAML Syntax Error" #sh実行
+        - uses: actions/checkout@v4 #アクション呼び出し
