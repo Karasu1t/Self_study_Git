@@ -9,3 +9,7 @@ jobs:
       - env:
           RESULT: ${{ steps.source.outputs.result }}   # stepsコンテキストから参照
         run: echo "${RESULT}"
+    
+      #- id: <step-id>
+      #  run: echo "<key=value>" >> "${GITHUB_OUTPUT}"
+      #  ${{ steps.<step-id>.outputs.<key> }}
