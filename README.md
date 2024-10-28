@@ -12,14 +12,14 @@
   pythonを使用した簡単なモデルの作成  (学習当時Pythonをあまり分かっておらず、リベンジを予定)  
   TensorFlowやFLASKなどのフレームワーク利用  
 
-●CI/CD(GitHub Action)　　
+●CI/CD(GitHub Action)  
   GitHub Actionを利用したCI/CDの実装
 
 ●コンテナ技術  
   Docker  
-  Kubernetes　　
+  Kubernetes  
 
-●英語の勉強　　
+●英語の勉強  
   海外留学(オーストラリア 3ヶ月)  
 
 ------検討中------  
