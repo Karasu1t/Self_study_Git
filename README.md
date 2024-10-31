@@ -22,7 +22,9 @@
 ●英語の勉強  
   海外留学(オーストラリア 3ヶ月)  
 
-------検討中------  
+------検討中------
+●AWSサービス(Athena, Cognito)  
+●RDB(MySQL,Oracle)  
 ●NoSQLデータベース  
 ●Azure or GCP  
 ●DeepLearning  
