@@ -4,7 +4,7 @@
 Terraformを使用して、EC2などを使用せずLambda(Python)のみを使用した  
 WebアプリケーションっぽいものをIaCで構築する。  
 
-【目的】
+【目的】  
 1.Lambdaの学習  
 2.Lambdaを学ぶ過程で、Pythonの勉強  
 3.サーバレスによるメリットとデメリットの体現  
