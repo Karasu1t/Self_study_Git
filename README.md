@@ -23,12 +23,13 @@
   海外留学(オーストラリア 3ヶ月)  
 
 ------検討中------  
-●AWSサービス(Athena, QuickSight, Cognito)  
+●AWSサービス(Athena, QuickSight, Glue)  
 ●RDB(MySQL, Oracle)  
-●NoSQLデータベース  
-●Azure or GCP  
+●NoSQLデータベース(DynamoDB, MongoDB)  
+●GCP  
 ●DeepLearning  
 ●アプリ開発/プログラム言語  
+●Node.js  
 ●HTML/CSS  
 
 ★★★★★★★★★★★★学習済★★★★★★★★★★★★  
