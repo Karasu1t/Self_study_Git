@@ -28,8 +28,7 @@
 ●NoSQLデータベース(DynamoDB, MongoDB)  
 ●GCP  
 ●DeepLearning  
-●アプリ開発/プログラム言語  
-●Node.js  
+●JavaScript/Express/Node.js  
 ●HTML/CSS  
 
 ★★★★★★★★★★★★学習済★★★★★★★★★★★★  
