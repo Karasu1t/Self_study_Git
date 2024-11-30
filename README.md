@@ -23,11 +23,9 @@
   海外留学(オーストラリア 3ヶ月)  
 
 ------検討中------  
-●AWSサービス(Athena, QuickSight, Glue)  
 ●RDB(MySQL, Oracle)  
 ●GCP  
 ●DeepLearning  
-●Cognito OAuth    
 ●JavaScript/Express/Node.js  
 ●HTML/CSS  
 
@@ -38,3 +36,8 @@
 ●NoSQLデータベース(DynamoDB, MongoDB)  
   DynamoDBはアトミックカウンタ方式を使用したレコード管理を学習  
   MongoDBはMongoDB Atrasを使用して簡単なCRUD操作まで学習
+●Cognito OAuth    
+  OAuthを使用して、curlコマンドにてlambda関数を実行前に認証が通るところまで学習  
+●AWSサービス(Athena, QuickSight, Glue)  
+  S3バケットに格納したデータからGlueにてデータカタログを作成し、Athenaで読み込んだ結果を元に  
+  QuickSightにてBIレポートを出力するところまで学習  
