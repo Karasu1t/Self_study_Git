@@ -35,9 +35,10 @@
   サーバレスコンピューティング (https://github.com/Karasu1t/Self_study_Git/blob/main/IaC(Terrafrom)/ServerlessComputing/About_ServerlessComputing.md)  
 ●NoSQLデータベース(DynamoDB, MongoDB)  
   DynamoDBはアトミックカウンタ方式を使用したレコード管理を学習  
-  MongoDBはMongoDB Atrasを使用して簡単なCRUD操作まで学習
+  MongoDBはMongoDB Atrasを使用して簡単なCRUD操作まで学習  
 ●Cognito OAuth    
   OAuthを使用して、curlコマンドにてlambda関数を実行前に認証が通るところまで学習  
 ●AWSサービス(Athena, QuickSight, Glue)  
   S3バケットに格納したデータからGlueにてデータカタログを作成し、Athenaで読み込んだ結果を元に  
   QuickSightにてBIレポートを出力するところまで学習  
+●AWS Certified Solutions Architect - Professional(合格)
