@@ -12,7 +12,7 @@
   pythonを使用した簡単なモデルの作成  (学習当時Pythonをあまり分かっておらず、リベンジを予定)  
   TensorFlowやFLASKなどのフレームワーク利用  
 
-●CI/CD(GitHub Action)  
+●CI/CD(GitHub Action)※実施中  
   GitHub Actionを利用したCI/CDの実装
 
 ●コンテナ技術  
