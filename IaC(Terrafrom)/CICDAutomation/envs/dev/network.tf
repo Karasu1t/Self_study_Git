@@ -111,6 +111,7 @@ resource "aws_internet_gateway" "igw" {
     Project = var.project
     Env     = var.environment
   }
+
 }
 
 resource "aws_route" "public_rt_igw_r" {

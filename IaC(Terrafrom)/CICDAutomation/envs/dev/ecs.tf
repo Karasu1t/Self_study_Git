@@ -47,7 +47,7 @@ resource "aws_ecs_task_definition" "ecs_task" {
   container_definitions = jsonencode([
     {
       name      = "${var.project}-${var.environment}-container"
-      image     = "public.ecr.aws/nginx/nginx:stable-perl"
+      image     = "070565688990.dkr.ecr.ap-northeast-1.amazonaws.com/cicdauto-dev-app-ecr:latest"
       cpu       = 128
       memory    = 256
       essential = true

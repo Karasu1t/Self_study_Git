@@ -12,7 +12,7 @@ terraform {
 }
 
 module "env_dev" {
-  source = "./envs/dev"
+  source      = "./envs/dev"
   region      = var.region
   project     = var.project
   environment = var.environment_dev
