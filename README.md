@@ -32,7 +32,7 @@
 ★★★★★★★★★★★★学習済★★★★★★★★★★★★  
 ●IaC (Terraform)   
   Web三層構造作成 ※作り方だけハンズオンで覚えて、概要などの資料は未作成  
-  サーバレスコンピューティング (https://github.com/Karasu1t/Self_study_Git/blob/main/IaC(Terrafrom)/ServerlessComputing/About_ServerlessComputing.md)  
+  サーバレスコンピューティング ([https://github.com/Karasu1t/Self_study_Git/blob/main/IaC(Terrafrom)/ServerlessComputing/About_ServerlessComputing.md](https://github.com/Karasu1t/Self_study_Git/blob/main/IaC(Terrafrom)/ServerlessComputing/README.md))  
 ●NoSQLデータベース(DynamoDB, MongoDB)  
   DynamoDBはアトミックカウンタ方式を使用したレコード管理を学習  
   MongoDBはMongoDB Atrasを使用して簡単なCRUD操作まで学習  
