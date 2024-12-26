@@ -52,17 +52,12 @@ resource "aws_iam_policy" "codedeploy_ecs_policy" {
     Version = "2012-10-17"
     Statement = [
       {
-        Action = "ecs:DescribeServices"
-        Effect = "Allow"
-        Resource = "*"
-      },
-      {
-        Action = "ecs:DescribeTaskDefinition"
-        Effect = "Allow"
-        Resource = "*"
-      },
-      {
-        Action = "ecs:UpdateService"
+        Action = [
+          "ecs:UpdateService",
+          "ecs:DescribeServices",
+          "ecs:DescribeTaskDefinition",
+          "ecs:RegisterTaskDefinition"
+        ]
         Effect = "Allow"
         Resource = "*"
       }
@@ -80,3 +75,95 @@ resource "aws_iam_role_policy_attachment" "codedeploy_policy_attach" {
   role       = aws_iam_role.codedeploy_role.name
   policy_arn = "arn:aws:iam::aws:policy/AWSCodeDeployRoleForECS"
 }
+
+# CodePipelineのサービスロール
+resource "aws_iam_role" "codepipeline_service_role" {
+  name = "${var.project}-${var.environment}-codepipeline-service-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Action = "sts:AssumeRole"
+      Principal = {
+        Service = "codepipeline.amazonaws.com"
+      }
+      Effect = "Allow"
+      Sid    = ""
+    }]
+  })
+}
+
+resource "aws_iam_role_policy" "codepipeline_service_policy" {
+  name   = "${var.project}-${var.environment}-codepipeline-service-policy"
+  role   = aws_iam_role.codepipeline_service_role.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = [
+          "codedeploy:CreateDeployment",
+          "codedeploy:GetDeployment",
+          "codedeploy:GetDeploymentConfig",
+          "codedeploy:ListDeployments",
+          "codedeploy:GetApplication",
+          "codedeploy:RegisterApplicationRevision",
+          "codedeploy:GetApplicationRevision",
+          "codebuild:StartBuild",
+          "codebuild:BatchGetBuilds",
+          "s3:GetObject",
+          "s3:PutObject",
+          "ecr:GetAuthorizationToken",
+          "ecr:BatchGetImage",
+          "ecr:GetImage",
+          "ecr:DescribeImages",
+          "ecr:GetDownloadUrlForLayer"
+        ]
+        Effect   = "Allow"
+        Resource = "*"
+      }
+    ]
+  })
+}
+
+#CloudWatch Events
+resource "aws_iam_role" "eventbridge_to_codepipeline_role" {
+  name = "eventbridge-to-codepipeline-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Effect = "Allow",
+        Principal = {
+          Service = "events.amazonaws.com"
+        },
+        Action = "sts:AssumeRole"
+      }
+    ]
+  })
+}
+
+resource "aws_iam_policy" "eventbridge_to_codepipeline_policy" {
+  name = "eventbridge-to-codepipeline-policy"
+
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Effect = "Allow",
+        Action = [
+          "codepipeline:StartPipelineExecution"
+        ],
+        Resource = "*"
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "attach_eventbridge_to_codepipeline_policy" {
+  role       = aws_iam_role.eventbridge_to_codepipeline_role.name
+  policy_arn = aws_iam_policy.eventbridge_to_codepipeline_policy.arn
+}
+
+

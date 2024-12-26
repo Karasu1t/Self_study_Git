@@ -47,7 +47,7 @@ resource "aws_ecs_task_definition" "ecs_task" {
   container_definitions = jsonencode([
     {
       name      = "${var.project}-${var.environment}-container"
-      image     = "070565688990.dkr.ecr.ap-northeast-1.amazonaws.com/cicdauto-dev-app-ecr:latest"
+      image     = "${data.aws_caller_identity.self.account_id}.dkr.ecr.ap-northeast-1.amazonaws.com/${var.project}-${var.environment}-app-ecr:latest"
       cpu       = 128
       memory    = 256
       essential = true
@@ -78,6 +78,7 @@ resource "aws_ecs_service" "ecs_service" {
   task_definition = aws_ecs_task_definition.ecs_task.arn
   desired_count   = 1
   launch_type     = "FARGATE"
+
   network_configuration {
     subnets          = [aws_subnet.public_subnet_1a.id]
     security_groups  = [aws_security_group.web_sg.id]
