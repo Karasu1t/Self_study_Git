@@ -40,9 +40,8 @@ Terraformを使用して実装する。
 Code Pipeline(Code Build,Code Deploy)にて自動リリース  
 
 【構成図】  
-![image](https://github.com/user-attachments/assets/67a137fb-db0c-4fd7-a38a-0db11fc2d52f)  
+![スクリーンショット 2024-12-26 130627](https://github.com/user-attachments/assets/979a0081-b067-4957-94e8-7f2c25aa1998)   
 
 ※ECRへのプッシュをトリガーにCloudWatch Eventsにて検知、  
-検知後Codepipelineを使用してCodedeployを使用し、サービス更新を構想しているが、  
-うまくいかず滞り中。
+検知後CodepipelineよりCodedeployを使用し、サービス更新を構想しているが滞り中。
 
