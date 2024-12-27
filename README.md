@@ -8,16 +8,18 @@
 今後やってみたいことは以下に記しております。  
 
 ★★★★★★★★★今後やってみたいこと★★★★★★★★★  
-●機械学習(Python)  
+●機械学習(Python) ※実施中  
   pythonを使用した簡単なモデルの作成  (学習当時Pythonをあまり分かっておらず、リベンジを予定)  
   TensorFlowやFLASKなどのフレームワーク利用  
 
-●CI/CD(GitHub Action)※実施中  
-  GitHub Actionを利用したCI/CDの実装
+●CI/CD(GitHub Action) ※実施中  
+  GitHub ActionをTerraformで作成  
 
-●コンテナ技術  
-  Docker  
+●コンテナ  
   Kubernetes  
+
+●Azure  ※実施中
+  概要理解  
 
 ●英語の勉強  
   海外留学(オーストラリア 3ヶ月)  
@@ -28,6 +30,7 @@
 ●DeepLearning  
 ●JavaScript/Express/Node.js  
 ●HTML/CSS  
+●IPAの資格  
 
 ★★★★★★★★★★★★学習済★★★★★★★★★★★★  
 ●IaC (Terraform_AWS)   
