@@ -11,7 +11,7 @@ Terraformを使用して実装する。
 5.ECS(docker)の理解  
 ※GitHub Action様のレポジトリには環境変数が入っているため非公開  
 
-【構成図】  
+【構成図】※2024/12/27追加 最終系は以下の形式にはならなかったです。  
 ![スクリーンショット 2024-12-26 130627](https://github.com/user-attachments/assets/979a0081-b067-4957-94e8-7f2c25aa1998)   
 
 【実現したいこと】  
@@ -47,9 +47,9 @@ Code Pipeline(Code Build,Code Deploy)にて自動リリース
 
 
 【実行環境】  
-　・OS: Windows11
-　・シェル: GitBash
-　・Terraformバージョン: 1.10.2
+　・OS: Windows11  
+　・シェル: GitBash  
+　・Terraformバージョン: 1.10.2  
 
 【所感】  
 ・一通りAWS環境を一通り作成できたと推察される。  
