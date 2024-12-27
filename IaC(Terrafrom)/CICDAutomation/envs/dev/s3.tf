@@ -22,3 +22,10 @@ resource "aws_s3_bucket_versioning" "s3_codedeploy" {
     status = "Enabled"
   }
 }
+
+# ファイルのアップロード (artifact.zip)
+resource "aws_s3_object" "ecs_task_definition" {
+  bucket = aws_s3_bucket.s3_codedeploy.bucket
+  key    = "artifact.zip"
+  source = "envs/dev/templates/artifact.zip"
+}

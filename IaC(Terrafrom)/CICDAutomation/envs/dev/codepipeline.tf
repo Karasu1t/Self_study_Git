@@ -17,13 +17,13 @@ resource "aws_codepipeline" "ecs_deploy_pipeline" {
       name             = "Source"
       category         = "Source"
       owner            = "AWS"
-      provider         = "ECR"
+      provider         = "S3"
       version          = "1"
       output_artifacts = ["SourceOutput"]
 
       configuration = {
-        RepositoryName = "${var.project}-${var.environment}-app-ecr"
-        ImageTag       = "latest"
+        S3Bucket = aws_s3_bucket.s3_codedeploy.bucket
+        S3ObjectKey = "artifact.zip"
       }
     }
   }
@@ -34,12 +34,16 @@ resource "aws_codepipeline" "ecs_deploy_pipeline" {
       name             = "Deploy"
       category         = "Deploy"
       owner            = "AWS"
-      provider         = "CodeDeploy"
+      provider         = "CodeDeployToECS"
       version          = "1"
       input_artifacts  = ["SourceOutput"]
       configuration = {
         ApplicationName = aws_codedeploy_app.ecs_app.name
         DeploymentGroupName = aws_codedeploy_deployment_group.ecs_deployment_group.deployment_group_name
+        TaskDefinitionTemplateArtifact = "SourceOutput"
+        TaskDefinitionTemplatePath     = "ecs-task-definition.json"
+        AppSpecTemplateArtifact    = "SourceOutput"
+        AppSpecTemplatePath        = "appspec.yaml"
       }
     }
   }

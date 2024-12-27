@@ -6,10 +6,11 @@ resource "aws_cloudwatch_event_rule" "ecr_image_push" {
   description = "Trigger CodePipeline when an image is pushed to ECR"
 
   event_pattern = jsonencode({
-    "source" = ["aws.ecr"],
-    "detail-type" = ["ECR Repository State Change"],
-    "detail" = {
-      "eventName" = ["PutImage"]
+    "source": ["aws.ecr"],
+    "detail-type": ["AWS API Call via CloudTrail"],
+    "detail": {
+      "eventSource": ["ecr.amazonaws.com"],
+      "eventName": ["PutImage"]
     }
   })
 }

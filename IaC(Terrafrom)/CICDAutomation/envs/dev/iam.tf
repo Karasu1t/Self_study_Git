@@ -20,9 +20,27 @@ resource "aws_iam_role" "ecs_task_execution_role" {
   })
 }
 
-resource "aws_iam_role_policy_attachment" "ecs_task_execution_role_policy" {
-  role       = aws_iam_role.ecs_task_execution_role.name
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+resource "aws_iam_role_policy" "ecs_task_execution_role_policy" {
+  name   = "${var.project}-${var.environment}-ecs-task-execution-policy"
+  role   = aws_iam_role.ecs_task_execution_role.id
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "ecr:GetAuthorizationToken",
+          "ecr:BatchCheckLayerAvailability",
+          "ecr:GetDownloadUrlForLayer",
+          "ecr:BatchGetImage",
+          "logs:CreateLogStream",
+          "logs:CreateLogGroup",
+          "logs:PutLogEvents"
+        ]
+        Resource = "*"
+      }
+    ]
+  })
 }
 
 # CodeDeployのサービスロール
@@ -113,11 +131,16 @@ resource "aws_iam_role_policy" "codepipeline_service_policy" {
           "codebuild:BatchGetBuilds",
           "s3:GetObject",
           "s3:PutObject",
+          "s3:ListBucket",
+          "s3:GetBucketVersioning",
+   				"s3:GetObjectVersion",
           "ecr:GetAuthorizationToken",
           "ecr:BatchGetImage",
-          "ecr:GetImage",
           "ecr:DescribeImages",
-          "ecr:GetDownloadUrlForLayer"
+          "ecr:GetDownloadUrlForLayer",
+          "ecs:RegisterTaskDefinition",
+          "ecs:UpdateService",
+          "iam:PassRole",
         ]
         Effect   = "Allow"
         Resource = "*"
@@ -165,5 +188,3 @@ resource "aws_iam_role_policy_attachment" "attach_eventbridge_to_codepipeline_po
   role       = aws_iam_role.eventbridge_to_codepipeline_role.name
   policy_arn = aws_iam_policy.eventbridge_to_codepipeline_policy.arn
 }
-
-
