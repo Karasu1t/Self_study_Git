@@ -11,7 +11,7 @@
 ●機械学習(Python) ※実施中  
   pythonを使用した簡単なモデルの作成  (学習当時Pythonをあまり分かっておらず、リベンジを予定)  
   TensorFlowやFLASKなどのフレームワーク利用  
-　Kaggeleのコンペに出場し、金メダルを取る  
+  Kaggeleのコンペに出場し、金メダルを取る  
 
 ●CI/CD(GitHub Action) ※実施中  
   GitHub ActionをTerraformで作成  
