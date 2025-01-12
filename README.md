@@ -13,7 +13,7 @@
   TensorFlowやFLASKなどのフレームワーク利用  
   Kaggeleのコンペに出場し、金メダルを取る  
 
-●CI/CD(GitHub Action) ※実施中  
+●CI/CD(GitHub Action)   
   GitHub ActionをTerraformで作成  
 
 ●コンテナ  
@@ -21,6 +21,8 @@
 
 ●Azure  ※実施中
   概要理解  
+
+●Data Dog
 
 ●英語の勉強  
   海外留学(オーストラリア 3ヶ月)  
@@ -32,6 +34,18 @@
 ●JavaScript/Express/Node.js  
 ●HTML/CSS  
 ●IPAの資格  
+
+★★★★★★★★★★★保有資格★★★★★★★★★★★★  
+※2025/1/12時点(下位の資格は省略)  
+LinuC Level3 304  
+AWS SAP  
+Python 3 エンジニア認定基礎試験　　
+Python 3 エンジニア認定データ分析試験　　
+
+(2025年に取得予定)  
+AZ-900  
+AZ-204  
+認定Kubernetes管理者 (CKA-JP）試験  
 
 ★★★★★★★★★★★★学習済★★★★★★★★★★★★  
 ●IaC (Terraform_AWS)   
@@ -46,4 +60,3 @@
 ●AWSサービス(Athena, QuickSight, Glue)  
   S3バケットに格納したデータからGlueにてデータカタログを作成し、Athenaで読み込んだ結果を元に  
   QuickSightにてBIレポートを出力するところまで学習  
-●AWS Certified Solutions Architect - Professional(合格)
