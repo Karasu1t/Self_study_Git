@@ -37,7 +37,7 @@
 ★★★★★★★★★★★保有資格★★★★★★★★★★★★  
 ※2025/1/12時点(下位の資格は省略)  
 LinuC Level3 304  
-AWS SAP  
+Certified Solutions Architect - Professional  
 Python 3 エンジニア認定基礎試験  
 Python 3 エンジニア認定データ分析試験  
 
