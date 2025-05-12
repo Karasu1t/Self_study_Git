@@ -19,18 +19,16 @@
 ●コンテナ  
   Kubernetes  
 
-●Azure  
-  概要理解  
-
-●Data Dog
+●GCP  
+●DeepLearning  
 
 ●英語の勉強  
   海外留学(オーストラリア 3ヶ月)  
 
 ------検討中------  
 ●RDB(MySQL, Oracle)  
-●GCP  
-●DeepLearning  
+●Azure  
+●Data Dog
 ●JavaScript/Express/Node.js  
 ●HTML/CSS  
 
@@ -60,3 +58,6 @@ AZ-204
 ●AWSサービス(Athena, QuickSight, Glue)  
   S3バケットに格納したデータからGlueにてデータカタログを作成し、Athenaで読み込んだ結果を元に  
   QuickSightにてBIレポートを出力するところまで学習  
+●Kuberenetes  
+  以下のレポジトリにて作成  
+- [autodeploy-sample-nginx](https://github.com/Karasu1t/autodeploy-sample-nginx)      
