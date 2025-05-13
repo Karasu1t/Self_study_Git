@@ -16,9 +16,6 @@
 ●CI/CD(GitHub Action)   
   GitHub ActionをTerraformで作成  
 
-●コンテナ  
-  Kubernetes  
-
 ●GCP  
 ●DeepLearning  
 
@@ -59,5 +56,5 @@ AZ-204
   S3バケットに格納したデータからGlueにてデータカタログを作成し、Athenaで読み込んだ結果を元に  
   QuickSightにてBIレポートを出力するところまで学習  
 ●Kuberenetes  
-  以下のレポジトリにて作成  
+  ArgoCDを使用した自動デプロイ
 - [autodeploy-sample-nginx](https://github.com/Karasu1t/autodeploy-sample-nginx)      
