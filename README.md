@@ -13,10 +13,7 @@
   TensorFlowやFLASKなどのフレームワーク利用  
   Kaggeleのコンペに出場し、金メダルを取る  
 
-●CI/CD(GitHub Action)   
-  GitHub ActionをTerraformで作成  
-
-●GCP  
+●GCP ※実施中  
 ●DeepLearning  
 
 ●英語の勉強  
@@ -25,7 +22,7 @@
 ------検討中------  
 ●RDB(MySQL, Oracle)  
 ●Azure  
-●Data Dog
+●Data Dog  
 ●JavaScript/Express/Node.js  
 ●HTML/CSS  
 
