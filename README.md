@@ -27,7 +27,6 @@
 
 ## 🤔 検討中の分野
 
-- RDB（MySQL, Oracle）
 - Azure
 - DataDog
 - JavaScript / Express / Node.js
@@ -43,11 +42,11 @@
 - AWS Certified Solutions Architect - Professional  
 - Python 3 エンジニア認定基礎試験  
 - Python 3 エンジニア認定データ分析試験  
+- 認定Kubernetes管理者（CKA）
 
 **2025年取得予定**
 - AZ-900  
 - AZ-204  
-- 認定Kubernetes管理者（CKA-JP）
 
 ---
 
