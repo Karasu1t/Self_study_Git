@@ -14,9 +14,12 @@
 - Pythonを使用した簡単なモデルの作成  
   ※学習当時はPythonに不慣れだったため、現在リベンジ中
 - TensorFlow、Flaskなどのフレームワーク活用
-- Kaggleのコンペに出場し、金メダルを取得するのが目標
 
 ### ● GCP ※実施中
+- GKEを使用したWebサービスの外部公開  
+- GKE上で構築した環境のCI/CDパイプラインの作成    
+- BigQueryを使用したデータのETL      
+- Vertex AIを使用している環境を構築しMLOpsが機能できるようにする  
 
 ### ● Deep Learning
 
@@ -27,14 +30,15 @@
 
 ## 🤔 検討中の分野
 
-- Azure
-- DataDog
-- JavaScript / Express / Node.js
-- HTML / CSS
+- Azure  
+- DataDog  
+- Go  
+- JavaScript / Express / Node.js  
+- HTML / CSS  
 
 ---
 
-## 📜 保有資格（2025年1月12日時点）
+## 📜 保有資格（2025年5月22日時点）
 
 ※下位資格は省略
 
@@ -45,8 +49,7 @@
 - 認定Kubernetes管理者（CKA）
 
 **2025年取得予定**
-- AZ-900  
-- AZ-204  
+- Associate Cloud Engineer（ACE）  
 
 ---
 
