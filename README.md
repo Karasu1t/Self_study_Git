@@ -79,7 +79,7 @@
 - ArgoCD を使用した自動デプロイ  
   ↳ [autodeploy-sample-nginx](https://github.com/Karasu1t/autodeploy-sample-nginx)
 - GKE(Google Cloud) + Terraform(IaC) + GithubActions(CI/CD)を用いた環境構築  
-  ↳ [XXXXXXX](XXXXXXXXX)
+  ↳ [gc_web]([XXXXXXXXX](https://github.com/Karasu1t/gc_web#))
 
 ---
 
