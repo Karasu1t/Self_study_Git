@@ -16,8 +16,6 @@
 - TensorFlow、Flaskなどのフレームワーク活用
 
 ### ● GCP ※実施中
-- GKEを使用したWebサービスの外部公開  
-- GKE上で構築した環境のCI/CDパイプラインの作成    
 - BigQueryを使用したデータのETL      
 - Vertex AIを使用している環境を構築しMLOpsが機能できるようにする  
 
