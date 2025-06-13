@@ -80,7 +80,7 @@
 
 ### ● GoogleCloud(旧GCP)
 - CloudStorageからBigQueryへのETLパイプラインの実装  
-  ↳ [storage-bq-etl-pipeline](https://github.com/Karasu1t/autodeploy-sample-nginx)
+  ↳ [storage-bq-etl-pipeline](https://github.com/Karasu1t/storage-bq-etl-pipeline)
 
 ---
 
