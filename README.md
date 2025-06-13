@@ -33,7 +33,8 @@
 - Go  
 - JavaScript / Express / Node.js  
 - HTML / CSS  
-
+- Snowflake
+  
 ---
 
 ## 📜 保有資格（2025年6月11日時点）
@@ -76,6 +77,10 @@
   ↳ [autodeploy-sample-nginx](https://github.com/Karasu1t/autodeploy-sample-nginx)
 - GKE(Google Cloud) + Terraform(IaC) + GithubActions(CI/CD)を用いた環境構築  
   ↳ [gc_web](https://github.com/Karasu1t/gc_web)
+
+### ● GoogleCloud(旧GCP)
+- CloudStorageからBigQueryへのETLパイプラインの実装  
+  ↳ [storage-bq-etl-pipeline](https://github.com/Karasu1t/autodeploy-sample-nginx)
 
 ---
 
