@@ -82,8 +82,8 @@
 ### ● GoogleCloud(旧GCP)
 - CloudStorageからBigQueryへのETLパイプラインの実装  
   ↳ [storage-bq-etl-pipeline](https://github.com/Karasu1t/storage-bq-etl-pipeline)
-- Data Dogを使用したモニタリング基盤と障害発生時のSlack通知システムの構築
-  ↳ [XXXX](XXXXXX)
+- Data Dogを使用したモニタリング基盤と障害発生時のSlack通知システムの構築　　
+  ↳ [datadog-monitoring-withslack]([XXXXXX](https://github.com/Karasu1t/datadog-monitoring-withslack))
  
 ---
 
