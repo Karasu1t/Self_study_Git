@@ -16,7 +16,8 @@
 - TensorFlow、Flaskなどのフレームワーク活用
 
 ### ● GCP ※実施中
-- BigQueryを使用したデータのETL      
+- GKE上でData Dogをデプロイしモニタリングを出来る様にする  
+- Cloud Functionの実行結果をSlack通知できるようにする    
 - Vertex AIを使用している環境を構築しMLOpsが機能できるようにする  
 
 ### ● Deep Learning
@@ -29,11 +30,11 @@
 ## 🤔 検討中の分野
 
 - Azure  
-- DataDog  
 - Go  
 - JavaScript / Express / Node.js  
 - HTML / CSS  
 - Snowflake
+- dbt / AirFlows / Workflows　
   
 ---
 
@@ -41,7 +42,7 @@
 
 ※下位資格は省略
 
-- LinuC Level3 304  
+- LinuC Level3 304  (2025年11月有効期限)
 - AWS Certified Solutions Architect - Professional  
 - Python 3 エンジニア認定基礎試験  
 - Python 3 エンジニア認定データ分析試験  
@@ -81,7 +82,9 @@
 ### ● GoogleCloud(旧GCP)
 - CloudStorageからBigQueryへのETLパイプラインの実装  
   ↳ [storage-bq-etl-pipeline](https://github.com/Karasu1t/storage-bq-etl-pipeline)
-
+- Data Dogを使用したモニタリング基盤と障害発生時のSlack通知システムの構築
+  ↳ [XXXX](XXXXXX)
+ 
 ---
 
 ## ✍️ 備考
