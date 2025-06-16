@@ -10,7 +10,7 @@
 
 ## 🚀 今後やってみたいこと
 
-### ● 機械学習（Python）※実施中
+### ● 機械学習（Python）※実施中(放置気味)
 - Pythonを使用した簡単なモデルの作成  
   ※学習当時はPythonに不慣れだったため、現在リベンジ中
 - TensorFlow、Flaskなどのフレームワーク活用
@@ -29,12 +29,11 @@
 
 ## 🤔 検討中の分野
 
-- Azure  
-- Go  
-- JavaScript / Express / Node.js  
-- HTML / CSS  
 - Snowflake
 - dbt / AirFlows / Workflows　
+- Azure  
+- TypeScript(復習)  
+- JavaScript / Express / Node.js  
   
 ---
 
