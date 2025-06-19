@@ -10,17 +10,16 @@
 
 ## 🚀 今後やってみたいこと
 
-### ● 機械学習（Python）※実施中(放置気味)
-- Pythonを使用した簡単なモデルの作成  
-  ※学習当時はPythonに不慣れだったため、現在リベンジ中
-- TensorFlow、Flaskなどのフレームワーク活用
-
-### ● GCP ※実施中
-- GKE上でData Dogをデプロイしモニタリングを出来る様にする  
-- Cloud Functionの実行結果をSlack通知できるようにする    
+### ● GCP 
+- Workflowsを使用したETLのパイプラインを作成できるようにする  
 - Vertex AIを使用している環境を構築しMLOpsが機能できるようにする  
 
-### ● Deep Learning
+### ● Deep Learning ※実施中
+- Pytorch / Tensor Flowを使用してモデルを作成できるようになる  
+
+### ● Snowflake / dbt / Airflows
+- 上記3点セットを自由に扱えるようになる  
+- AWSやGoogle Cloudと併せて環境を構築し、マルチクラウド環境を1から自身の力だけで構築できる    
 
 ### ● 語学学習
 - 海外留学（デンマーク・3ヶ月）
@@ -29,12 +28,11 @@
 
 ## 🤔 検討中の分野
 
-- Snowflake
-- dbt / AirFlows / Workflows　
 - Azure  
 - TypeScript(復習)  
 - JavaScript / Express / Node.js  
-  
+- Ice Berg
+
 ---
 
 ## 📜 保有資格（2025年6月11日時点）
