@@ -81,6 +81,8 @@
   ↳ [storage-bq-etl-pipeline](https://github.com/Karasu1t/storage-bq-etl-pipeline)
 - Data Dogを使用したモニタリング基盤と障害発生時のSlack通知システムの構築  
   ↳ [datadog-monitoring-withslack](https://github.com/Karasu1t/datadog-monitoring-withslack)
+- 自動化されたデータ分析パイプラインの構築  
+  ↳ [gcp-data-analytics-pipeline](https://github.com/Karasu1t/gcp-data-analytics-pipeline)
  
 ---
 
