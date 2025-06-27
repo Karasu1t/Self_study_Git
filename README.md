@@ -11,7 +11,6 @@
 ## 🚀 今後やってみたいこと
 
 ### ● GCP 
-- Workflowsを使用したETLのパイプラインを作成できるようにする  
 - Vertex AIを使用している環境を構築しMLOpsが機能できるようにする  
 
 ### ● Deep Learning ※実施中
