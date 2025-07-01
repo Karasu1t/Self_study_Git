@@ -29,7 +29,6 @@
 
 - Azure  
 - TypeScript(復習)  
-- JavaScript / Express / Node.js  
 - Ice Berg
 
 ---
@@ -82,7 +81,11 @@
   ↳ [datadog-monitoring-withslack](https://github.com/Karasu1t/datadog-monitoring-withslack)
 - 自動化されたデータ分析パイプラインの構築  
   ↳ [gcp-data-analytics-pipeline](https://github.com/Karasu1t/gcp-data-analytics-pipeline)
- 
+
+### ● Snowflake
+- Snowflake × AWS S3 × Snowpipe Terraform Pipeline  
+  ↳ [autodeploy-sample-nginx](https://github.com/Karasu1t/snowpipe-aws-to-snowflake)
+
 ---
 
 ## ✍️ 備考
